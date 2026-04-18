@@ -8,7 +8,7 @@ const app = express();
 const PORT=process.env.PORT ||8000
 // 1. CORS MUST be at the very top
 app.use(cors({
-  origin:"https://ecommercefronted-xi.vercel.app/homepage"
+  origin:"https://ecommercefronted-xi.vercel.app"
 }));
 
 // 2. Body Parser
