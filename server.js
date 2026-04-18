@@ -7,7 +7,9 @@ dotenv.config()
 const app = express();
 const PORT=process.env.PORT ||8000
 // 1. CORS MUST be at the very top
-app.use(cors());
+app.use(cors({
+  origin:"https://ecommercefronted-rho.vercel.app/homepage"
+}));
 
 // 2. Body Parser
 app.use(express.json());
